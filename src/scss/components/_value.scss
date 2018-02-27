@@ -1,0 +1,40 @@
+/* ---
+------- VALUE
+--- */
+
+.value__stripe {
+    margin-bottom: rem(50);
+
+    @include tablet-further {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100rem;
+        margin: 0 auto 5rem;
+    }
+}
+
+.value__drawing {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: rem(20) 0 rem(40);
+
+    @include tablet-further {
+        width: 40%;
+        margin: 0;
+    }
+}
+
+.value__content {
+    padding: 0 rem(10);
+
+    @include tablet-further {
+        line-height: 30px;
+        width: 40%;
+        p{
+            text-align: left;
+        }
+    }
+}
+/* END VALUE PART */

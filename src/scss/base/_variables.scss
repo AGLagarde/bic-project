@@ -1,0 +1,69 @@
+// -------  GRID
+$container-large-desktop: 1140px;
+$container-tablet: 768px;
+$container-mobile: 320px;
+
+// base/grid
+$gutter-desktop-external: rem(30);
+$gutter-tablet-external: rem(21);
+$gutter-mobile-external: rem(15);
+
+// ------- COLORS
+// background
+$primary-color: #FFB900!default;
+$primary-color-hover: mix(black, $primary-color, 20%)!default;
+$color-light: #FFF;
+$color-grey: #EEEEEE;
+$color-grey-light: #DDD;
+$color-background: #FAFAFA;
+$text-font-color: #333!default;
+
+$yellow-picker: #EDF337;
+$orange-picker: #EC9D45;
+$darkrose-picker: #E0484C;
+$lightrose-picker: #EE7CA3;
+$lightpurple-picker: #AE9EDB;
+$darkpurple-picker: #835195;
+$lightblue-picker: #4BB0DC;
+$darkblue-picker: #2D4374;
+$lightgreen-picker: #B5E05E;
+$darkgreen-picker: #337641;
+$dark-picker: #202020;
+$brown-picker: #B99E6E;
+
+// ------- SETTINGS
+$text-alignment-desktop: center!default;
+$text-alignment-tablet: center!default;
+$text-alignment: center!default;
+
+// -------  FONTS
+// for classic text:
+$text-font-family: 'Lato', sans-serif;
+$text-font-size: 2rem!default; // 15px
+$text-font-style: normal!default;
+$text-font-weight: 400!default; // regular
+$text-font-letter-spacing: 0!default;
+$text-font-line-height: 1.5!default;
+
+// // for buttons:
+$button-font-size: 1.6rem!default; // 16px
+
+// h1
+$h1-font-family: 'Caveat', cursive!default;
+$h1-font-size: 4rem!default; // 40px
+$h1-font-letter-spacing: .025em!default;
+$h1-font-line-height: 1.3;
+$h1-font-size-desktop: 5.5rem!default; // 40px
+
+// h2
+$h2-font-family: 'Caveat', cursive!default;
+$h2-font-size: 3.3rem!default; // 35px
+$h2-font-letter-spacing: .025em!default;
+$h2-font-line-height: 1.3!default;
+$h2-font-size-desktop: 5.5rem!default;
+$h2-font-line-height-desktop: 1.3!default;
+
+// h3
+$h3-font-family: 'Lato', sans-serif!default;
+$h3-font-size: 2.4rem!default; // 24px
+$h3-font-letter-spacing: 0!default;

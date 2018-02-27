@@ -1,0 +1,73 @@
+/* ---
+------- SOCIALS
+--- */
+.socials {
+    margin: rem(30) auto;
+
+    .title {
+        margin-bottom: rem(10);
+    }
+
+    @include tablet-less {
+        width: 80%;
+        margin: rem(50) auto;
+    }
+
+    @include tablet-pro {
+        width: 80%;
+        margin: rem(50) auto;
+    }
+}
+
+#instafeed {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.socials__grid {
+    position: inherit !important;
+    height: inherit !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .general__title {
+        width: 100%;
+    }
+}
+
+.socials__item {
+    display: inline-block;
+    width: 100%;
+    margin-top: rem(30);
+    padding-top: rem(10);
+    padding-bottom: rem(70);
+    border: rem(1) solid $color-grey;
+    border-radius: rem(3);
+
+    img {
+        transform: scale(.9);
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    @include tablet-less {
+        width: 44%;
+    }
+
+    @include tablet-pro {
+        width: 29%;
+    }
+}
+
+.instafeed__media {
+  transition: .25s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+    transition: .25s ease-in;
+  }
+}
+
+/* END SOCIALS PART */

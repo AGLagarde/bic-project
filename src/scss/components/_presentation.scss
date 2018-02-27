@@ -1,0 +1,58 @@
+/* ---
+------- PRESENTATION
+--- */
+
+.presentation {
+    @include tablet-further {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.presentation__title {
+    margin: rem(50) 0;
+
+    @include tablet-further {
+        margin: rem(65) auto rem(70);
+        order: 1;
+    }
+}
+
+.presentation__img {
+    display: block;
+    width: 100%;
+    max-width: 75rem;
+    margin: 2rem auto 5rem;
+
+    @include tablet-further {
+        width: auto;
+        order: 3;
+    }
+}
+
+.presentation__content, .presentation__content2 {
+    text-align: center;
+    font-size: rem(22);
+}
+
+.presentation__content {
+    margin: rem(30) 0;
+
+    @include tablet-further {
+        padding: 0 rem(160);
+        line-height: 1.5;
+        order: 2;
+    }
+}
+
+.presentation__content2 {
+    display: inline-block;
+    margin-top: 0;
+    order: 2;
+}
+/* END PRESENTATION PART */

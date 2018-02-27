@@ -1,0 +1,76 @@
+/* ---
+------- SLIDER PART
+--- */
+.slider {
+  display: block;
+  height: rem(110);
+  margin: 10rem 0 5rem;
+  overflow: hidden;
+
+  @include tablet-further {
+    height: rem(60);
+  }
+}
+
+.slider__list {
+  list-style: none;
+  margin: 0 1rem;
+  height: 100%;
+  transition: .8s ease-in-out;
+}
+
+.slider__item {
+  height: 100%;
+  display: block;
+  text-align: center;
+  animation: colorchange 20s infinite alternate;
+  transition: color 2s ease-out;
+}
+
+@keyframes colorchange {
+  0% {
+    color: $orange-picker;
+  }
+
+  10% {
+    color: $darkrose-picker;
+  }
+
+  20% {
+    color: $lightrose-picker;
+  }
+
+  30% {
+    color: $lightpurple-picker;
+  }
+
+  40% {
+    color: $darkpurple-picker;
+  }
+
+  50% {
+    color: $lightblue-picker;
+  }
+
+  60% {
+    color: $darkblue-picker;
+  }
+
+  70% {
+    color: $lightgreen-picker;
+  }
+
+  80% {
+    color: $darkgreen-picker;
+  }
+
+  90% {
+    color: $brown-picker;
+  }
+
+  100% {
+    color: $yellow-picker;
+  }
+}
+
+/* END SLIDER PART */

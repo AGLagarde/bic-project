@@ -1,0 +1,85 @@
+- var colors = ["#EDF337", "#EC9D45", "#E0484C", "#EE7CA3", "#AE9EDB", "#835195", "#4BB0DC", "#2D4374", "#B5E05E", "#337641", "#202020", "#B99E6E"];
+- var slider = ["Votre bic, c'est...", "4 couleurs ?", "3 crayons + 1 mine ?", ".. à vous de décider...", "Un bic à vos besoins !"];
+include ../partials/pen.pug
+include ../partials/header.pug
+
+div.general__container
+    section.presentation
+        div.slider
+            ul.slider__list
+                each items in slider
+                    li.slider__item.h1= items
+        img.presentation__img(src='/images/bic-horizontal.png', alt="stylo bic presentation")
+        p.presentation__content Découvrez notre nouvelle collection,#[br] le stylo-bille BIC 4 couleurs 3+1HB.
+        p.presentation__content2 Choisissez vos couleurs d'encre et la couleur de votre grip.
+section.custom
+    h2.custom__title.general__title Personnalisez#[span.general__title__animation votre bic]
+    div.custom__wrap
+        div.custom__result
+            div.custom__resultBic.js-element-pen
+                +svgPen(0)
+                img(src="../images/pentip_draw.png" data-pen='true', alt="stylo bic").custom__resultBic-tip.js-element-mine
+        div.custom__settings
+            div.custom__step__btn.btn__reset
+                button.btn.js-element-reset Reset
+            form.custom__settingsForm
+                div.custom__step.colorpicker__inkWrap
+                    div.custom__mobileImg.colorpicker__inkImg
+                        +svgPen(1)
+                    div.colorpicker__choice
+                        div.colorpicker__ink
+                            h3.colorpicker__inkTitle.general__subtitle Vos 4 couleurs
+                            ul.colorpicker__inkList
+                                each item in colors
+                                    li.colorpicker__inkItem.js-ink(data-color=item)
+                        div.colorpicker__btnWrap.custom__btnWrap
+                            a.custom__btn.custom__btnNext.btn(href='#') Continuer
+                div.custom__step.colorpicker__gripWrap
+                    div.custom__mobileImg.colorpicker__gripImg
+                        +svgPen(2)
+                    div.colorpicker__choice
+                        div.colorpicker__choiceWrap.colorpicker__ink
+                            h3.colorpicker__gripTitle.general__subtitle Votre grip
+                            ul.colorpicker__gripList.colorpicker__inkList
+                                each item in colors
+                                    li.colorpicker__inkItem.js-grip(data-color=item)
+                        div.colorpicker__btnWrap.custom__btnWrap.js-element-mobile
+                            button.custom__btn.custom__btnNext.btn(href='#') Continuer
+                            button.custom__btnBack.btn(href='#') Retour
+                div.custom__step.pentip__wrap
+                    div.custom__mobileImg.pentip__img
+                        +svgPen(3)
+                    div.pentip__choice
+                        div.pentip__choiceWrap
+                            h3.general__subtitle Vos pointes
+                            ul.pentip__list
+                                li.pentip__item.pentip__itemBic.is-selected.js-element-pentip
+                                    img(src='/images/pentip_bic.png' alt='stylo bic')
+                                    div.pentip__item-overlay 4 Bic
+                                li.pentip__item.pentip__itemDraw.js-element-pentip
+                                    img(src='/images/pentip_draw.png' alt='stylo bic')
+                                    div.pentip__item-overlay 3+1HB
+                        div.pentip__btnWrap.custom__btnWrap.js-element-mobile
+                            a.custom__btn.mobile.btn(href='https://www.bicworld.com/fr/nos-produits/papeterie', target="_blank", rel="noopener noreferrer") Acheter
+                            button.custom__btnBack.btn Retour
+    a.custom__finalBtn.btn(href='https://www.bicworld.com/fr/nos-produits/papeterie') Acheter
+
+div.general__container
+    section.value
+        h2.general__title Conçu idéalement #[br] #[span.general__title__animation pour tous] les utilisateurs
+        div.value__stripe
+            img.value__drawing(src='/images/dessin.jpg', alt="dessin")
+            div.value__content
+                p Au premier abord, l’utilisation d’un stylo bille concerne les étudiants mais le nouveau bic va plus loin.
+                p Peu importe où vous êtes, prenez note de vos idées avec le porte mine intégré et annoter vos idées à l’aide des couleurs.
+                p Libérez votre créativité en dessinant
+
+div.general__container
+    div.divider.center
+        span.divider__first
+        span.divider__second
+
+div#instafeed.socials__grid
+    h2.general__title Postez#[span.general__title__animation vos talents]sur Instagram
+
+include ../partials/footer.pug

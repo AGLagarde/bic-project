@@ -1,0 +1,47 @@
+/* ---
+------- TYPO
+--- */
+
+html {
+    font-size: 62.5%; // 10px = 1rem
+}
+
+body {
+    margin: 0;
+    font-family: $text-font-family;
+    font-weight: $text-font-weight;
+    font-style:$text-font-style;
+    font-size: $text-font-size;
+    color: $text-font-color;
+    letter-spacing: $text-font-letter-spacing;
+    line-height: $text-font-line-height;
+}
+
+p {
+    text-align: $text-alignment;
+
+    @include tablet {
+        text-align: $text-alignment-tablet;
+    }
+
+    @include desktop {
+        text-align: $text-alignment-desktop;
+    }
+}
+
+.h1 {
+    font-family: $h1-font-family;
+    font-size: $h1-font-size;
+    letter-spacing: $h1-font-letter-spacing;
+    line-height: $h1-font-line-height;
+    font-weight: normal;
+
+    @include tablet {
+        font-size: $h1-font-size-desktop;
+    }
+
+    @include desktop {
+        font-size: $h1-font-size-desktop;
+    }
+}
+/* END TYPO BASE */

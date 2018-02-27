@@ -1,0 +1,113 @@
+/* ---
+------- PENTIP
+--- */
+.pentip__img {
+    svg {
+        position: absolute;
+        left: -145%;
+        top: 35%;
+        transform-origin: top right;
+        transform: rotate(270deg);
+    }
+
+    @include mobile-landscape {
+        svg {
+            left: -100%;
+        }
+    }
+
+    @include tablet-further {
+        svg {
+            display: none;
+        }
+    }
+}
+
+.pentip__choice {
+    padding-bottom: rem(50);
+
+    @include tablet-further {
+        padding: 0 rem(30) 0;
+    }
+}
+
+.pentip__choiceWrap {
+    padding-bottom: rem(40);
+
+    @include tablet-further {
+        border: rem(1) solid $color-grey-light;
+        border-radius: rem(8);
+    }
+
+    @include tablet-pro {
+        margin: 0 auto rem(40);
+        padding-top: rem(20);
+        padding-bottom: rem(20);
+    }
+}
+
+.pentip__list {
+    width: 90%;
+    margin: 2.5rem auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pentip__item {
+    position: relative;
+    width: rem(102);
+    height: rem(102);
+    overflow: hidden;
+    border-radius: rem(5);
+    border: rem(1) solid $text-font-color;
+    cursor: pointer;
+
+    &.is-selected {
+        border: rem(2) solid $primary-color;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &:hover .pentip__item-overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-top: rem(10);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #FFF;
+        text-align: center;
+    }
+}
+
+.pentip__btnWrap {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 0;
+
+    @include tablet-further {
+        display: none;
+    }
+}
+
+.custom__step:nth-of-type(1) {
+    display: block;
+
+    .pentip__btnWrap {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0;
+        padding-right: rem(30);
+    }
+}
+
+.pentip__btn {
+    @include tablet-pro {
+        display: none;
+    }
+}
+/* END PENTIP PART */

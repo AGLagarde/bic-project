@@ -1,0 +1,228 @@
+/* ---
+------- CUSTOM
+--- */
+
+.custom {
+    position: relative;
+    z-index: 0;
+    padding-top: rem(20);
+    background-color: $color-background;
+
+    @include tablet-further {
+        padding-bottom: rem(50);
+    }
+}
+
+.custom__title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.custom__wrap {
+    @include tablet-further {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+}
+
+.custom__result {
+    display: none;
+
+    @include tablet-further {
+        display: block;
+        width: 30%;
+        height: 100%;
+        border-radius: rem(8);
+    }
+}
+
+.custom__resultBic {
+    display: none;
+
+    .js-element-grip, .js-element-customLeft, .js-element-customRight {
+        transition: .5s fill;
+    }
+
+    @include tablet-further {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: rem(50) 0;
+    }
+}
+
+.custom__resultBic-colorLeft {
+    @include tablet-further {
+        z-index: 1;
+        top: rem(87);
+        left: rem(-28);
+    }
+}
+
+.custom__resultBic-colorRight {
+    @include tablet-further {
+        z-index: 1;
+        top: rem(89);
+        left: rem(19);
+    }
+}
+
+.custom__resultBic-top {
+    @include tablet-further {
+        z-index: 4;
+        top: rem(54);
+        left: 0;
+    }
+}
+
+.custom__resultBic-tube {
+    display: none;
+
+    @include tablet-further {
+        z-index: 3;
+        top: rem(473);
+        left: rem(-26);
+    }
+}
+
+.custom__resultBic-tip {
+    display: none;
+
+    @include tablet-further {
+        left: 55%;
+        bottom: 3rem;
+        transform: translateX(-50%) scale(0.9);
+        opacity: 0;
+        z-index: 17;
+        &.is-active {
+          opacity: 1;
+        }
+    }
+}
+
+.custom__resultBic-tube, .custom__resultBic-top, .custom__resultBic-colorLeft, .custom__resultBic-colorRight, .custom__resultBic-tip {
+    @include tablet-further {
+        position: absolute;
+        display: block;
+    }
+}
+
+.custom__settings {
+    @include tablet-further {
+       width: 60%;
+       background: $color-background;
+    }
+
+    @include tablet-pro {
+        width: 50%;
+    }
+}
+
+.custom__settingsForm {
+     @include tablet-further {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+.custom__step {
+    position: relative;
+    display: none;
+
+    @include tablet-further  {
+        display: block;
+        flex-basis: 100%;
+    }
+}
+
+.custom__mobileImg {
+    position: relative;
+    height: rem(150);
+    margin-bottom: rem(55);
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        height: 115%;
+        width: 100%;
+    }
+
+    @include mobile-landscape {
+        img{
+            width: 70%;
+        }
+    }
+
+    @include tablet-further {
+        display: none;
+    }
+}
+
+.custom__step__btn {
+    text-align: center;
+    margin-bottom: rem(10);
+
+    .btn{
+      @include resetBtn;
+        padding: 0 0 rem(5);
+        background: none;
+        color: #CCC;
+        border-bottom: rem(1) solid #CCC;
+        border-radius: 0;
+        font-size: rem(20);
+    }
+}
+.btn__reset {
+  text-align: right;
+  padding-right: rem(40);
+
+  .btn {
+    text-transform: uppercase;
+    font-size: rem(16);
+  }
+}
+
+.custom__step:nth-of-type(1) {
+    display: block;
+
+    .custom__btnWrap {
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: rem(30);
+        @include tablet-further {
+            display: none;
+        }
+    }
+}
+
+.custom__btnBack {
+    background-color: $color-light;
+    border: rem(1) solid $primary-color;
+    color: $primary-color;
+}
+
+.custom__finalBtn {
+    display: none;
+
+    @include tablet-further {
+        display: block;
+        text-align: center;
+        width: rem(390);
+        margin: rem(30) auto 0;
+        padding: rem(10);
+    }
+    &.mobile {
+        display: block;
+        text-align: inherit;
+        width: inherit;
+        margin: inherit;
+        padding: inherit;
+    }
+}
+/* END CUSTOM PART */

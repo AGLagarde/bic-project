@@ -1,0 +1,36 @@
+/* ---
+------- DIVIDER
+--- */
+
+.divider.center {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    
+    span {
+        width: 48%;
+        border-top: rem(1) solid $color-grey;
+    }
+
+    &__first {
+        position: relative;
+
+        &:after {
+            content: "";
+            background: $color-grey;
+            position: absolute;
+            height: rem(8);
+            width: rem(8);
+            right: rem(-21);
+            top: rem(-4);
+            transform: rotate(45deg);
+            vertical-align: top;
+        }
+    }
+
+    &__second {
+        margin-left: rem(33);
+    }
+}
+/* END DIVIDER PART */

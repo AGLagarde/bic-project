@@ -1,0 +1,103 @@
+/* ---
+------- GENERAL
+--- */
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+        display: inline-block;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: $button-font-size;
+
+    &:hover, &:focus {
+        text-decoration: none;
+        opacity: 0.8;
+    }
+}
+
+.general__title {
+    font-family: $h2-font-family;
+    font-size: $h2-font-size;
+    letter-spacing: $h2-font-letter-spacing;
+    line-height: $h2-font-line-height;
+    margin: 1.5em 0;
+
+    @include tablet {
+        font-size: $h2-font-size-desktop;
+    }
+
+    @include desktop {
+        font-size: $h2-font-size-desktop;
+    }
+}
+
+.general__subtitle {
+    font-family: $h3-font-family;
+    font-size: $h3-font-size;
+    letter-spacing: $h3-font-letter-spacing;
+    margin: 0;
+    font-weight: normal;
+}
+
+.general__title, .general__subtitle {
+    text-align: $text-alignment;
+}
+
+.general__title {
+  &.is-active {
+    .general__title__animation {
+      &:after {
+        width: 100%;
+        transition: .5s ease-in-out;
+      }
+    }
+  }
+}
+
+.general__title {
+  .general__title__animation {
+    position: relative;
+    padding: 0 rem(15);
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 50%;
+      width: 0;
+      height: 70%;
+      background-color: #7bed9f;
+      transform: translateY(-50%);
+      transition: .5s ease-in-out;
+    }
+  }
+}
+
+/*
+Grid
+ */
+ .general__container {
+     @include mobile{
+         padding-left: $gutter-mobile-external;
+         padding-right: $gutter-mobile-external;
+     }
+
+     @include tablet {
+         padding-left: $gutter-tablet-external;
+         padding-right: $gutter-tablet-external;
+     }
+
+     @mixin desktop {
+         padding-left: $gutter-desktop-external;
+         padding-right: $gutter-desktop-external;
+     }
+ }
+/* END MEDIA BASE */

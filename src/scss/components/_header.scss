@@ -1,0 +1,19 @@
+/* ---
+------- HEADER
+--- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px $color-grey;
+    padding: rem(18) rem(15);
+}
+
+.btn {
+    @include resetBtn;
+    font-size: rem(16);
+    border-radius: rem(8);
+    background-color: $primary-color;
+    padding: rem(5) rem(15) rem(6);
+}
+/* END HEADER PART */

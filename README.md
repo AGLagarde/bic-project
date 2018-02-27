@@ -5,11 +5,14 @@ http://bicproject.netlify.com/
 
 Projet d'école réalisé à 4
 
-METTRE EN PROD LE SITE
+METTRE EN PROD LE SITE:
+
 Pour mettre en production le site, lancer la commande :
 npm run build
 
-INSTALLER L'ENVIRONNEMENT
+
+INSTALLER L'ENVIRONNEMENT:
+
 Installer les dépendances de façon locale dans votre ordinateur :
 npm install
 OU :

@@ -1,1 +1,24 @@
-<svg width="52" height="69" viewBox="0 0 52 69" xmlns="http://www.w3.org/2000/svg"><title>Gomme</title><defs><linearGradient x1="0%" y1="50%" y2="38.195%" id="a"><stop stop-color="#EEE" stop-opacity=".8" offset="0%"/><stop stop-color="#FFF" stop-opacity=".8" offset="32.685%"/><stop stop-color="#D8D8D8" stop-opacity=".6" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path d="M9 43V17c6.667-.667 13.167-1 19.5-1s11.5.333 15.5 1v26H9z" fill="#E3E3E3"/><path d="M4 67.5V40c7.667 1 15.167 1.5 22.5 1.5S41 41 48 40v28l-44-.5z" fill="#E6E7E9"/><path d="M0 68.5V9C2 3.333 10.833.5 26.5.5S50.667 3.333 52 9v59.5H0z" fill="url(#a)"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="69px" viewBox="0 0 52 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Gomme</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="38.1950827%" id="linearGradient-1">
+            <stop stop-color="#EEEEEE" stop-opacity="0.8" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.8" offset="32.684949%"></stop>
+            <stop stop-color="#D8D8D8" stop-opacity="0.6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-481.000000, -9.000000)">
+            <g id="Gomme" transform="translate(481.000000, 9.000000)">
+                <g id="Group" transform="translate(4.000000, 16.000000)">
+                    <path d="M5,27 L5,1 C11.6666667,0.333333333 18.1666667,1.07392104e-15 24.5,0 C30.8333333,0 36,0.333333333 40,1 L40,27 L5,27 Z" id="Path-3" fill="#E3E3E3"></path>
+                    <path d="M0,51.5 L0,24 C7.66666667,25 15.1666667,25.5 22.5,25.5 C29.8333333,25.5 37,25 44,24 L44,52 L0,51.5 Z" id="Path-2" fill="#E6E7E9"></path>
+                </g>
+                <path d="M0,68.5 L0,9 C2,3.33333333 10.8333333,0.5 26.5,0.5 C42.1666667,0.5 50.6666667,3.33333333 52,9 L52,68.5 L0,68.5 Z" id="Path-4" fill="url(#linearGradient-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

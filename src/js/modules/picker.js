@@ -12,7 +12,7 @@ export default class Picker {
     }
 
     _createBound() {
-        [
+        let arr = [
             '_onInk',
             '_onGrip',
             '_onReset',
@@ -26,8 +26,8 @@ export default class Picker {
             '_resetGrip',
             '_resetMobile',
             '_resetPentip'
-        ]
-            .forEach((fn) => this[fn] = this[fn].bind(this))
+        ];
+        arr.forEach((fn) => this[fn] = this[fn].bind(this));
     }
 
     /*

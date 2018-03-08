@@ -1,1 +1,20 @@
-<svg width="111" height="367" viewBox="0 0 111 367" xmlns="http://www.w3.org/2000/svg"><title>Body</title><defs><linearGradient x1="0%" y1="52.8%" y2="52.78%" id="a"><stop stop-color="#E9E8EE" offset="0%"/><stop stop-color="#F9FAFE" offset="46.355%"/><stop stop-color="#C9CACE" offset="100%"/></linearGradient></defs><path d="M106.447 365V229l4.5-65V78.5l-2.25-52.5c-.833-14.333-6.25-22.5-16.25-24.5s-26.833-2-50.5 0c-8.667 0-15.333 7.333-20 22-7 22-32 156-17.5 323.5.333.667 4.833.667 13.5 0l6.5-12c-2-8-5-14.5-9-19.5l2.5-111 8 1 3.5 38 1 123c14.333-11 25.833-16.667 34.5-17 8.667-.333 22.5 4.833 41.5 15.5z" fill="url(#a)" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="367px" viewBox="0 0 111 367" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Body</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="52.7999818%" x2="100%" y2="52.7796726%" id="linearGradient-1">
+            <stop stop-color="#E9E8EE" offset="0%"></stop>
+            <stop stop-color="#F9FAFE" offset="46.3550052%"></stop>
+            <stop stop-color="#C9CACE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-440.000000, -74.000000)" fill="url(#linearGradient-1)">
+            <g id="Body" transform="translate(440.000000, 74.000000)">
+                <path d="M106.447122,365 L106.447122,229 L110.947122,164 L110.947122,78.5 L108.697122,26 C107.863789,11.6666667 102.447122,3.5 92.4471225,1.5 C82.4471225,-0.5 65.6137891,-0.5 41.9471225,1.5 C33.2804558,1.5 26.6137891,8.83333333 21.9471225,23.5 C14.9471225,45.5 -10.0528775,179.5 4.44712248,347 C4.78045582,347.666667 9.28045582,347.666667 17.9471225,347 L24.4471225,335 C22.4471225,327 19.4471225,320.5 15.4471225,315.5 C15.4471225,315.5 16.2804558,278.5 17.9471225,204.5 L25.9471225,205.5 L29.4471225,243.5 L30.4471225,366.5 C44.7804558,355.5 56.2804558,349.833333 64.9471225,349.5 C73.6137891,349.166667 87.4471225,354.333333 106.447122,365 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

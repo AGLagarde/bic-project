@@ -16,8 +16,8 @@ export default class instafeed {
     }
 
     _createBound() {
-        ['_instaFeed']
-            .forEach((fn) => this[fn] = this[fn].bind(this))
+        let arr = ['_instaFeed'];
+        arr.forEach((fn) => this[fn] = this[fn].bind(this));
     }
 
     _instaFeed() {

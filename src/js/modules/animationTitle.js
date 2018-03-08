@@ -6,10 +6,12 @@ export default class animationTitle {
         this._eventListener();
     }
 
+    
     _createBound() {
-        ['_animation']
-            .forEach((fn) => this[fn] = this[fn].bind(this))
+        let arr = ['_animation'];
+        arr.forEach((fn) => this[fn] = this[fn].bind(this));
     }
+
 
     _animation() {
         for (let i = 0; i < this._dom.title.length; i++) {

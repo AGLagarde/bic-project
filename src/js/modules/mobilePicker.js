@@ -11,8 +11,8 @@ export default class mobilePicker {
     }
 
     _createBound() {
-        ['_onShowHide']
-            .forEach((fn) => this[fn] = this[fn].bind(this))
+        let arr = ['_onShowHide'];
+        arr.forEach((fn) => this[fn] = this[fn].bind(this));
     }
 
     _onShowHide() {
@@ -47,9 +47,7 @@ export default class mobilePicker {
                         parentPrev.style.display = 'block';
                         parentCurrent.style.display = 'none';
                     });
-
                 }
-
             }
         }
         if (window.innerWidth > 767) {

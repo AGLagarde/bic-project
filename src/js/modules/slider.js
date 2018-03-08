@@ -9,8 +9,8 @@ export default class slider {
     }
 
     _createBound() {
-        ['_onSlider', '_onLoad']
-            .forEach((fn) => this[fn] = this[fn].bind(this))
+        let arr = ['_onSlider', '_onLoad']; 
+        arr.forEach((fn) => this[fn] = this[fn].bind(this))
     }
 
     _onSlider() {

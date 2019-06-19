@@ -1,10 +1,3 @@
-# bic-project
-
-Netlify
-http://bicproject.netlify.com/
-
-Projet d'école réalisé à 4
-
 METTRE EN PROD LE SITE:
 
 Pour mettre en production le site, lancer la commande :
